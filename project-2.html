@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom styles -->
+    <title>Project Charter</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <style>
+      /* Utilities */
+      * {
+        font-family: "fontello", sans-serif;
+      }
+      i {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+      h6 {
+        font-size: 15px;
+      }
+      .scopes h6 {
+        font-size: 16px;
+      }
+      .border-around {
+        border: 8px solid blue; /* đặt border xanh xung quanh các phần */
+      }
+      .goals hr {
+        width: 91%;
+      }
+      .fs-7 {
+        font-size: 0.8rem;
+      }
+      .bg-purple {
+        background-color: #b197fc;
+      }
+
+      /* Đặt chiều cao tương đối */
+      .goals,
+      .team {
+        height: 65%;
+      }
+      .scopes,
+      .primary {
+        height: 35.01%;
+      }
+
+      /* Thiết lập phần Timeline */
+      .timeline hr {
+        margin-top: 0;
+      }
+      .timeline-line {
+        background-color: #fff;
+        border-bottom: 1px dashed #3bc9db;
+      }
+
+      /* Thêm Responsive cho chế độ tablet và mobile */
+      @media screen and (max-width: 991px) {
+        .timeline i {
+          font-size: 44px;
+        }
+        .scopes h6 {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        .project-title h6 {
+          font-size: small;
+        }
+        .project-title h3 {
+          font-size: large;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Tiêu đề của dự án -->
+    <section class="project-title">
+      <h6 class="text-center fw-bold text-primary mt-3">PROJECT CHARTER</h6>
+      <h3 class="text-center fw-bold text-primary my-2">
+        TRANG WEB QUẢN LÍ THÚ CƯNG
+      </h3>
+    </section>
+
+    <!-- Xây dựng Project Charter -->
+    <section>
+      <div class="container">
+        <!-- 1 hàng nhưng chia ra thành 3 cột -->
+        <div class="row border-around">
+          <!-- Xây dựng Goals và Scopes -->
+          <div class="col-sm-12 col-lg-4">
+            <!-- Xây dựng phần Goals -->
+            <div class="goals row border-around pb-5">
+              <div class="row">
+                <div class="col-12 align-self-center">
+                  <h4 class="text-primary fw-bold mb-0 py-2 border-bottom ms-2">
+                    Goals
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row mt-3 justify-content-center ms-1 ps-0">
+                <div class="col-sm-12 col-lg-2 text-center">
+                  <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-10">
+                  <h6 class="fw-bold">Goal 1</h6>
+                  <p>
+                    Cung cấp cho khách hàng một trang web dễ sử dụng để tìm kiếm dịch vụ chăm sóc phù hợp.
+                  </p>
+                </div>
+              </div>
+              <hr style="color: #adb5bd; margin: 0 auto" />
+
+              <div class="row mt-3 justify-content-center ms-1 ps-0">
+                <div class="col-sm-12 col-lg-2 text-center">
+                  <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-10">
+                  <h6 class="fw-bold">Goal 2</h6>
+                  <p>
+                    Tăng doanh thu bằng cách mở rộng đối tác và thu hút nhiều
+                    khách hàng hơn.
+                  </p>
+                </div>
+              </div>
+              <hr style="color: #adb5bd; margin: 0 auto" />
+
+              <div class="row mt-3 justify-content-center ms-1 ps-0">
+                <div class="col-sm-12 col-lg-2 text-center">
+                  <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-10">
+                  <h6 class="fw-bold">Goal 3</h6>
+                  <p>
+                    Tạo ra một hệ thống thanh toán an toàn và đáng tin cậy cho
+                    khách hàng.
+                  </p>
+                </div>
+              </div>
+              <hr style="color: #adb5bd; margin: 0 auto" />
+            </div>
+
+            <!-- Xây dựng phần Scopes -->
+            <div class="scopes row border-around pb-5">
+              <div class="row">
+                <div class="col-12 align-self-center">
+                  <h4 class="text-primary fw-bold mb-0 py-2 border-bottom ms-2">
+                    Scopes
+                  </h4>
+                </div>
+              </div>
+
+              <div
+                class="row pt-3 ps-4 justify-content-center"
+                style="row-gap: 1rem"
+              >
+                <div class="col-11 col-sm-11 col-lg-6">
+                  <h6 class="fw-bold">IN</h6>
+                  <p class="mb-1">
+                    <i class="fa-solid fa-user-tie fs-7 me-2"></i>Nguyễn Bảo kha
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-location-dot fs-7 me-2"></i>Huyện Cư Jút, Đắk Nông
+                  </p>
+                </div>
+
+                <div class="col-11 col-sm-11 col-lg-6">
+                  <h6 class="fw-bold">OUT</h6>
+                  <p class="mb-1">
+                    <i class="fa-solid fa-building fs-7 me-2"></i>Công ty Cổ
+                    phần Đầu tư và Truyền thông ABC
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-location-dot fs-7 me-2"></i>Thị trấn Eatling, Đắk Nông
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Xây dựng Team và Primary -->
+          <div class="col-sm-12 col-lg-3">
+            <!-- Xây dựng phần Team -->
+            <div class="team row border-around pb-5">
+              <div class="row">
+                <div class="col-12 align-self-center">
+                  <h4 class="text-primary fw-bold mb-0 py-2 border-bottom ms-2">
+                    Team
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row mt-3 ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <h6 class="fw-bold">Member 01</h6>
+                  <p>Nguyễn Bảo Kha</p>
+                </div>
+              </div>
+              <div class="row ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <h6 class="fw-bold">Member 02</h6>
+                  <p>Name: ...</p>
+                </div>
+              </div>
+              <div class="row ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <h6 class="fw-bold">Member 03</h6>
+                  <p>Name: ...</p>
+                </div>
+              </div>
+              <div class="row ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <h6 class="fw-bold">Member 04</h6>
+                  <p>Name: ...</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Xây dựng phần Primary -->
+            <div class="primary row border-around">
+              <div class="row">
+                <div class="col-12 align-self-center">
+                  <h4 class="text-primary fw-bold mb-0 py-2 border-bottom ms-2">
+                    Primary
+                  </h4>
+                </div>
+              </div>
+
+              <div class="row mt-3 ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <p>
+                    Phát triển hệ thống sử dụng dịch vụ chăm sóc và thu mua sản phẩm giúp người dùng
+                    nhanh chóng tiếp cận và sử dụng dịch vụ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row ms-1 justify-content-center">
+                <div class="col-sm-12 col-lg-3 text-center">
+                  <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="col-11 col-sm-11 col-lg-9">
+                  <p>
+                    Tích hợp các API của bên thứ 3 để nâng cao trải nghiệm và sự
+                    tiện lợi của trang web.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xây dựng phần Timeline -->
+          <div class="timeline col-sm-12 col-lg-5 border-around pb-5">
+            <div class="row">
+              <div class="col-12 align-self-center">
+                <h4 class="text-primary fw-bold mt-1 py-2 border-bottom ms-2">
+                  Timeline
+                </h4>
+              </div>
+            </div>
+
+            <div class="row mt-3 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  01
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">2 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Lên kế hoạch chi tiết và phân tích yêu cầu của khách hàng để
+                  xác định phạm vi và hướng phát triển chính cho dự án.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  02
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">4 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Thiết kế UI/UX để xác định vị trí, cách sắp xếp thông tin và
+                  tăng tính hấp dẫn của trang web.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  03
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">6 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Phát triển hệ thống đặt dịch vụ phù hợp bao gồm ngày, tháng, loại
+                  dịch vụ chăm sóc và thời gian, đồng thời nhập thêm nguồn sản phẩm
+                  dành cho thú cưng như đồ chăm sóc chuyên dụng, thức ăn,...
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  04
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">2 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Tích hợp các API của bên thứ 3 cho các tính năng như xử lý
+                  thanh toán, dịch vụ bản đồ và hệ thống đánh giá để nâng cao
+                  trải nghiệm và sự tiện lợi.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  05
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">2 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Kiểm thử và sửa lỗi để đảm bảo tính ổn định và chất lượng của
+                  trang web.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  06
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">2 weeks</h6>
+                <p class="mb-0 pb-2">
+                  Triển khai và đi vào hoạt động chính thức.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-4 justify-content-center">
+              <div class="col-11 col-sm-11 col-lg-3 text-lg-center">
+                <h4
+                  class="d-inline-block text-white bg-purple rounded-circle p-2"
+                >
+                  07
+                </h4>
+              </div>
+              <div class="col-11 col-sm-11 col-lg-8 pe-0 timeline-line">
+                <h6 class="fw-bold">Continuous</h6>
+                <p class="mb-0 pb-2">
+                  Quản lý, bảo trì, nâng cấp để cải thiện trải nghiệm người dùng
+                  và nâng cao hiệu suất của trang web.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

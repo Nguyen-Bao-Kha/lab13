@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+  /* -----Xây dựng phần Navbar----- */
+  .nav-item {
+    border: 0 !important;
+    font-size: small;
+  }
+  .nav-item a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #nav-bar .container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* -----Xây dựng phần Chứng chỉ - Giải thưởng----- */
+  .sub-cert {
+    border-right: 0 !important;
+    border-bottom: 1px solid orange;
+    padding-bottom: 3rem;
+    margin-bottom: 0 !important;
+  }
+
+  /* -----Xây dựng phần Liên hệ----- */
+  #footer span {
+    display: none;
+  }
+}

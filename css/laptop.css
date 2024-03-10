@@ -1,0 +1,183 @@
+/* Utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fontello", sans-serif;
+}
+i {
+  color: #339af0;
+}
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-fit {
+  height: fit-content;
+}
+.hide {
+  display: none !important;
+}
+
+/* -----Xây dựng phần Banner----- */
+#banner {
+  height: 50vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg"); /* làm tối ảnh banner */
+  background-size: cover; /* đặt banner bao phủ toàn bộ chiều rộng vùng chứa */
+  background-position-x: center; /* căn giữa background-image responsive */
+}
+.banner-text {
+  transform: translate(0, 150%);
+}
+
+/* -----Xây dựng phần Navbar----- */
+#nav-bar img {
+  width: 22px;
+  transform: scale(5);
+}
+
+/* -----Xây dựng phần Thông tin cá nhân----- */
+#target,
+#personal-info {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* -----Xây dựng phần Thông tin nghề nghiệp----- */
+.sub-job-info {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto auto 1fr;
+  align-items: flex-start;
+  border: 2px solid #e9ecef;
+}
+.sub-job-info:hover {
+  box-shadow: 10px 5px 5px #e9ecef;
+}
+.job-info {
+  grid-column: 1/-1; /* đặt hàng 2 rộng toàn bộ row */
+}
+.btn-view {
+  animation: appear 0.4s ease;
+}
+@keyframes appear {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+/* thêm bullet trước các đề mục */
+#job-info ul li {
+  position: relative;
+}
+#job-info ul li::before {
+  position: absolute;
+  content: "";
+  background-color: #339af0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0.4rem;
+  left: -1.5rem;
+}
+
+#job-info .job-info-icon {
+  padding-top: 2.8rem;
+  color: #868e96;
+}
+.time {
+  font-size: 14px;
+  color: #868e96;
+  margin-bottom: 12px;
+}
+.job-info-text {
+  font-size: 14px;
+  color: #868e96;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Kỹ năng và Ngôn ngữ */
+.skill-language {
+  display: inline-block; /* chuyển sang inline-block để loại bỏ grid trước đó và mở rộng kích thước */
+}
+.skill-language p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.skill-language span {
+  display: inline-block; /* làm các thang điểm span nằm liền kề nhau */
+  background-color: #339af0;
+  height: 2px;
+  width: 44px;
+  margin-right: 12px;
+  margin-bottom: 32px;
+}
+.skill-language div span:last-child {
+  margin-right: 0;
+}
+.skill-language .grey-line {
+  background-color: #e9ecef;
+}
+
+/* Sở thích */
+.grid-hobby i {
+  width: 48px;
+  height: 48px;
+  padding-top: 11px;
+  border: 1px solid #339af0;
+  text-align: center;
+}
+.grid-hobby p {
+  color: #868e96;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* -----Xây dựng phần Dự án----- */
+.project a {
+  transition: transform 0.3s ease;
+}
+.project a:hover {
+  transform: scale(1.1);
+}
+.project-brief {
+  display: flex;
+  align-items: center;
+}
+.project-brief .year {
+  font-size: 12px;
+  background-color: #339af0;
+  border-radius: 16px;
+}
+.project-brief i {
+  color: #868e96;
+  font-size: 14px;
+  font-style: normal;
+  margin-right: 12px;
+}
+.project table td {
+  font-size: 14px;
+  color: #868e96;
+  padding: 12px;
+  vertical-align: top; /* căn top cho các đề mục đầu bảng */
+}
+.project table td:first-child {
+  width: 30%; /* tăng độ rộng */
+}
+#project img {
+  width: calc(100% + 2px); /* tăng độ rộng ảnh để đè lên border như mẫu */
+  margin: 0 -1px;
+}
